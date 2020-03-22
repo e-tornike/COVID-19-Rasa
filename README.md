@@ -5,23 +5,30 @@
 
 Set-up
 ```
-git clone https://github.com/e-tony/COVID-19-Rasa
-python3 -m venv venv
-source venv/bin/activate
+./install.sh
 ```
 
-Install dependencies
-```
-pip3 install -r requirements.txt
-python3 -m spacy download en_core_web_md
-python3 -m spacy link en_core_web_md en
-```
-
-
-Start rasa
+### 1. Run Rasa
 ```
 rasa run actions
 rasa shell
+```
+
+### 2. Run Rasa API
+```
+rasa run actions
+rasa run -m models --enable-api --log-file out.log
+```
+Test
+```
+curl -X POST \
+  http://localhost:5005/model/parse \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 434d91fe-d8cc-3f21-e751-ed223db2509e' \
+  -d '{
+  "text": "how many persons are infected in germany"
+}'
 ```
 
 ### Making changes
