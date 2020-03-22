@@ -26,36 +26,21 @@ slots:
     type: text
 
 responses:
-  utter_test:
-    - text: "hi :)"
-
   utter_total_infected:
     - text: "There are currently {cases} reported cases"
 
   utter_total_infected_by_location:
     - text: "There are currently {cases} reported cases in {location}"
 
-  utter_error_unkown_location:
-    - text: "sorry, i don't know the location '{location}'"
+  utter_total_recoveries:
+    - text: "There are currently {cases} recovered cases"
+
+  utter_total_recoveries_by_location:
+    - text: "There are currently {cases} recovered cases in {location}"
+
+  utter_error_unknown_location:
+    - text: "sorry, i don't know the location '{location}.'"
     
-  utter_greet:
-    - text: "Hey! How are you?"
-
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-    - text: "Did that help you?"
-
-  utter_happy:
-    - text: "Great, carry on!"
-
-  utter_goodbye:
-    - text: "Bye"
-
-  utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
 
 session_config:
   session_expiration_time: 60

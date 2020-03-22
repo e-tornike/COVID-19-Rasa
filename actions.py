@@ -36,9 +36,7 @@ class ActionTotalInfectedByLocation(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         loc = list(tracker.get_latest_entity_values("GPE"))[0]
-        # print("Entities:", list(entities)[0])
 
-        # loc = tracker.get_slot('GPE').lower()
         try:
             cc = pycountry.countries.lookup(loc).alpha_2
 
@@ -61,16 +59,20 @@ class ActionTotalRecoveriesByLocation(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
         loc = tracker.get_slot('GPE').lower()
-        cc = pycountry.countries.lookup(loc).alpha_2
+        print('test :)')
+        try:
+            cc = pycountry.countries.lookup(loc).alpha_2
 
-        covid19 = COVID19Py.COVID19()
-        res = covid19.getLocationByCountryCode(cc)
+            covid19 = COVID19Py.COVID19()
+            res = covid19.getLocationByCountryCode(cc)
 
-        r = sum([r['latest']['recovered'] for r in res])  # sum up all cases from all provinces
+            r = sum([r['latest']['recovered'] for r in res])  # sum up all cases from all provinces
 
-        dispatcher.utter_message(text=str(r))
-
+            dispatcher.utter_message(template="utter_total_recoveries_by_location", cases=str(r), location=str(loc))
+        except LookupError:
+            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
 
 
