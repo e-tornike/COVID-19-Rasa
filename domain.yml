@@ -1,0 +1,50 @@
+intents:
+  - total_infected
+  - total_infected_by_location
+  - total_recoveries_by_location
+  - rate_of_increase_by_location
+  - highest_by
+  - lowest_by
+  - faq_qa
+
+actions:
+  - action_total_infected
+  - action_total_infected_by_location
+  - action_total_recoveries_by_location
+  - action_rate_of_increase_by_location
+  - action_highest_by
+  - action_lowest_by
+  - action_faq_qa
+
+entities:
+  - GPE
+  - PERSON
+  - time
+
+slots:
+  GPE:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

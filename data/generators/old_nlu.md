@@ -1,0 +1,244 @@
+## intent:total_infected
+- how many people are infected on the planet
+- what is the total number of [coronavirus](topic) cases
+- how many cases are there in total
+- how many infections are there globally
+
+## intent:total_infected_by_location
+- how many people are infected in
+- what is the number of cases in
+- how many cases are there in
+- how many infections in
+
+## intent:total_recoveries_by_location
+- how many people recovered from [corona](topic) in
+- what is the number of that that got better after the [virus](topic) in
+- how many recoveries are there in
+- recoveries in
+
+## intent:rate_of_increase_by_location
+- what is the infection rate in 
+- how many people get infected daily in
+
+## intent:highest_by
+- which city has the highest number of cases
+- country with most [corona](topic)cases
+
+## intent:lowest_by
+- which city has the lowest number of cases
+- country with least [corona](topic)cases
+
+## intent:faq_qa
+- what is a novel [coronavirus](topic)
+- why is the disease being called [coronavirus](topic) disease 2019, covid-19
+- why might someone blame or avoid individuals and groups (create stigma) because of covid-19
+- how can people help stop stigma related to covid-19
+- what is the source of the [virus](topic)
+- how does the [virus](topic) spread
+- can someone who has had covid-19 spread the illness to others
+- can someone who has been quarantined for covid-19 spread the illness to others
+- can the [virus](topic) that causes covid-19 be spread through food, including refrigerated or frozen food
+- will warm weather stop the outbreak of covid-19
+- what is community spread
+- am i at risk for covid-19 in the united states
+- has anyone in the united states gotten infected
+- how can i help protect myself
+- what should i do if i had close contact with someone who has covid-19
+- who is at higher risk for serious illness from covid-19
+- what should people at higher risk of serious illness with covid-19 do
+- does cdc recommend the use of facemask to prevent covid-19
+- am i at risk for covid-19 from a package or products shipping from china
+- what are the symptoms and complications that covid-19 can cause
+- should i be tested for covid-19
+- can a person test negative and later test positive for covid-19
+- why might someone blame or avoid individuals and groups (create stigma) because of covid-19
+- how can people help stop stigma related to covid-19
+- what should healthcare professionals and health departments do
+- am i at risk if i go to a funeral or visitation service for someone who died of covid-19
+- am i at risk if i touch someone who died of covid-19 after they have passed away
+- what do funeral home workers need to know about handling decedents who had covid-19
+- what should i do if my family member died from covid-19 while overseas
+- my family member died from covid-19 while overseas. what are the requirements for returning the body to the united states
+- what is cdc doing about covid-19
+- what about imported animals or animal products
+- can i travel to the united states with dogs or import dogs into the united states during the covid-19 outbreak
+- should i be concerned about pets or other animals and covid-19
+- should i avoid contact with pets or other animals if i am sick with covid-19
+- what precautions should be taken for animals that have recently been imported (for example, by shelters, rescue groups, or as personal pets) from china
+- should i cancel my international trip
+- are international layovers included in cdc's recommendation to avoid nonessential travel
+- what is the risk of getting covid-19 on an airplane
+- what happens if there is a sick passenger on an international or domestic flight
+- should i go on a cruise
+- should travelers wear facemasks
+- what can i expect when departing other countries
+- what can i expect when arriving to the united states
+- how are travelers from countries with a level 3 travel health notice being screened when they enter the united states
+- after arriving from a country with a level 3 travel health notice related to covid-19 when can i return to work
+- what if i recently traveled and get sick
+- how can my family and i prepare for covid-19
+- what steps can my family take to reduce our risk of getting covid-19
+- what should i do if someone in my house gets sick with covid-19
+- how can i prepare in case my child's school, childcare facility, or university is dismissed
+- how can i prepare for covid-19 at work
+- should i use soap and water or a hand sanitizer to protect against covid-19
+- what cleaning products should i use to protect against covid-19
+- what should i do if there is an outbreak in my community
+- how do i prepare my children in case of covid-19 outbreak in our community
+- what steps should parents take to protect children during a community outbreak
+- will schools be dismissed if there is an outbreak in my community
+- should i go to work if there is an outbreak in my community
+- what is the risk of my child becoming sick with covid-19
+- how can i protect my child from covid-19 infection
+- are the symptoms of covid-19 different in children than in adults
+- should children wear masks
+- what is the risk to pregnant women of getting covid-19
+- how can pregnant women protect themselves from getting covid-19
+- can covid-19 cause problems for a pregnancy
+- can covid-19 be passed from a pregnant woman to the fetus or newborn
+- if a pregnant woman has covid-19 during pregnancy, will it hurt the baby
+- can the covid-19 [virus](topic) spread through drinking water
+- is the covid-19 [virus](topic) found in feces
+- can the covid-19 [virus](topic) spread through pools and hot tubs
+- can the covid-19 [virus](topic) spread through sewerage systems
+- should wastewater workers take extra precautions to protect themselves from the covid-19 [virus](topic)
+- what are the clinical features of covid-19
+- who is at risk for covid-19
+- who is at risk for severe disease from covid-19
+- when is someone infectious
+- which body fluids can spread infection
+- can people who recover from covid-19 be infected again
+- how should healthcare personnel protect themselves when evaluating a patient who may have covid-19
+- are pregnant healthcare personnel at increased risk for adverse outcomes if they care for patients with covid-19
+- should any diagnostic or therapeutic interventions be withheld due to concerns about transmission of covid-19
+- how do you test a patient for sars-cov-2, the [virus](topic) that causes covid-19
+- will existing respiratory [virus](topic) panels, such as those manufactured by biofire or genmark, detect sars-cov-2, the [virus](topic) that causes covid-19
+- how is covid-19 treated
+- should post-exposure prophylaxis be used for people who may have been exposed to covid-19
+- whom should healthcare providers notify if they suspect a patient has covid-19
+- do patients with confirmed or suspected covid-19 need to be admitted to the hospital
+- when can patients with confirmed covid-19 be discharged from the hospital
+- are pregnant healthcare personnel at increased risk for adverse outcomes if they care for patients with covid-19
+- what do i need to know if a patient with confirmed or suspected covid-19 asks about having a pet or other animal in the home
+- what do waste management companies need to know about wastewater and sewage coming from a healthcare facility or community setting with either a known covid-19 patient or person under investigation (pui)
+- do wastewater and sewage workers need any additional protection when handling untreated waste from healthcare or community setting with either a known covid-19 patient or pui
+- should medical waste or general waste from healthcare facilities treating puis and patients with confirmed covid-19 be handled any differently or need any additional disinfection
+- what personal protective equipment (ppe) should be worn by individuals transporting patients who are confirmed with or under investigation for covid-19 within a healthcare facility
+- what ppe should be worn by hcp providing care to asymptomatic patients with a history of exposure to covid-19 who are being evaluated for a non-infectious complaint (e.g., hypertension or hyperglycemia)
+- what personal protective equipment (ppe) should be worn by environmental services (evs) personnel who clean and disinfect rooms of hospitalized patients with covid-19
+- what actions should school and childcare program administrators take to plan for an outbreak
+- what actions can staff and students take to prevent the spread of covid-19 in my school/childcare program
+- what steps should my school take if a student or staff member shows symptoms of covid-19
+- should my school screen students for cases of covid-19
+- what environmental cleaning procedures should my school take to keep staff and students healthy
+- what resources does cdc have available to share with staff, students, and parents
+- what actions should my school take if a sick student or staff member attended school before being confirmed as a covid-19 case
+- what should i do if my school experiences increased rates of absenteeism
+- should i close our school/childcare program if there's been covid-19 cases in my school
+- if our school is dismissed, how long should we dismiss school for
+- are there ways for students to keep learning if we decide to dismiss schools
+- if i make the decision for a school dismissal, what else should i consider
+- if we dismiss school, what do we need to consider when re-opening the building to students
+- what should we do if a child, student, or staff member has recently traveled to an area with covid-19 or has a family member who has traveled to an area with covid-19
+- what is a [coronavirus](topic)
+- what is covid-19
+- what are the symptoms of covid-19
+- how does covid-19 spread
+- can the [virus](topic) that causes covid-19 be transmitted through the air
+- can covid-19 be caught from a person who has no symptoms
+- can i catch covid-19 from the feces of someone with the disease
+- what can i do to protect myself and prevent the spread of disease
+- how likely am i to catch covid-19
+- should i worry about covid-19
+- who is at risk of developing severe illness
+- are antibiotics effective in preventing or treating the covid-19
+- are there any medicines or therapies that can prevent or cure covid-19
+- is there a vaccine, drug or treatment for covid-19
+- is covid-19 the same as sars
+- should i wear a mask to protect myself
+- how to put on, use, take off and dispose of a mask
+- how long is the incubation period for covid-19
+- can humans become infected with the covid-19 from an animal source
+- can i catch covid-19 from my pet
+- how long does the [virus](topic) survive on surfaces
+- is it safe to receive a package from any area where covid-19 has been reported
+- is there anything i should not do
+- what should i do if i have symptoms or have been exposed
+- how do i get tested
+- what's the current risk
+- how can people protect themselves
+- who is at higher risk for serious illness from covid-19
+- what should you do if you think you're sick
+- what is novel [coronavirus](topic) (covid-19)
+- what are the symptoms of covid-19
+- what is the treatment for covid-19
+- how is it decided whether a person with a confirmed case of covid-19 can self-isolate at home or must be confined to a hospital or elsewhere
+- what is the difference between covid-19 and other [coronavirus](topic)es
+- is california able to test for covid-19
+- should public events be cancelled
+- is it safe to go to restaurants and bars
+- what is social distancing
+- should i wear a mask
+- what if i have symptoms
+- what should i do if i am unable to work after being exposed to covid-19
+- what is the state doing to protect our health
+- what is sars-cov-2
+- where do [coronavirus](topic)es come from
+- is this [virus](topic) comparable to sars or to the seasonal flu
+- how severe is covid-19 infection
+- what is the mode of transmission
+- what are the symptoms of covid-19 infection
+- are some people more at risk than others
+- are children also at risk of infection
+- what about pregnant women
+- is there a treatment for the covid-19 disease
+- when should i be tested for covid-19
+- where can i get tested
+- how can i avoid getting infected
+- what should i do if i have had close contact with someone who has covid-19
+- are face masks effective in protecting against covid-19
+- is there a vaccine against the [virus](topic)
+- am i protected against covid-19 if i had the influenza vaccine this year
+- how prepared is europe for covid-19 and what is the eu doing
+- am i at risk of contracting covid-19 infection in the eu
+- how many people have been infected in the eu/eea
+- how long will this outbreak last
+- should schools and day centres be closed
+- what precautions should i take if i am visiting an area of local or community transmission
+- what if i have recently been in an area of local or community transmission
+- what is the risk of infection when travelling by plane
+- why are people not being checked for covid-19 at the airport when arriving from areas of local or community transmission
+- where can i learn more
+- what is the risk of covid-19 infection from animals or animal products imported from affected areas
+- what is the risk of covid-19 infection from food products imported from affected areas
+- what is the risk of covid-19 infection from contact with pets and other animals in the eu
+- how can i protect myself from the [coronavirus](topic)
+- what should be done if a [coronavirus](topic) infection is suspected
+- if i have a mild respiratory disease, do i need to go to my doctor's practice to pick up a sick leave certificate
+- what should i do after returning from a trip abroad
+- who has declared a pandemic. what does it mean for germany
+- what do sars-cov-2 and covid-19 stand for
+- how does the novel [virus](topic) spread
+- how long does it take from infection to the onset of disease
+- how dangerous is an infection with sars-cov-2
+- who decides whether a test for sars-cov-2 will be conducted
+- does the health insurance pay for the sars-cov-2 test
+- is there a quick test for sars-cov-2 for home use
+- is there a vaccine
+- what are the treatment options
+- how prepared is germany
+- what does it mean for germany if the sars-cov-2 [coronavirus](topic) continues to spread throughout the country
+- which areas are to be considered risk areas
+- what are the recommendations for persons travelling to areas in which transmission is occurring
+- what arrangements have been put in place for travellers coming into germany on flights from risk areas
+- are there measures for train passengers
+- what other arrangements have been put in place to protect the german public from the novel [coronavirus](topic) sars-cov-2
+- will i continue to get my salary if i have been placed under quarantine
+- will self-employed persons receive financial compensation if they are no longer able to work as a result of the [virus](topic)
+- what precautions must be taken at large-scale events
+- is there a danger that a person can become infected with the novel [coronavirus](topic) (sars-cov-2) through foodstuffs or objects
+- is water a possible source of infection in the transmission of sars-cov-2
+- where can doctors and clinics obtain additional information
+- when was the first information about the outbreak received
+- where did the outbreak start
+- have there been similar outbreaks in the past
