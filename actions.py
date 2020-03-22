@@ -21,7 +21,7 @@ class ActionTotalInfected(Action):
 
         r = res['confirmed']
 
-        dispatcher.utter_message(text=str(r))
+        dispatcher.utter_message(text=f"there are {r} reported cases")
 
         return []
 
@@ -39,15 +39,17 @@ class ActionTotalInfectedByLocation(Action):
         # print("Entities:", list(entities)[0])
 
         # loc = tracker.get_slot('GPE').lower()
-        cc = pycountry.countries.lookup(loc).alpha_2
+        try:
+            cc = pycountry.countries.lookup(loc).alpha_2
 
-        covid19 = COVID19Py.COVID19()
-        res = covid19.getLocationByCountryCode(cc)
+            covid19 = COVID19Py.COVID19()
+            res = covid19.getLocationByCountryCode(cc)
+                       
+            r = sum([r['latest']['confirmed'] for r in res])  # sum up all cases from all provinces
 
-        r = sum([r['latest']['confirmed'] for r in res])  # sum up all cases from all provinces
-
-        dispatcher.utter_message(text=str(r))
-
+            dispatcher.utter_message(template="utter_total_infected_by_location", cases=str(r), location=str(loc))
+        except LookupError:
+            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
 
 
