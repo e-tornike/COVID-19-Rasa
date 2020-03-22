@@ -40,7 +40,12 @@ responses:
 
   utter_error_unknown_location:
     - text: "sorry, i don't know the location '{location}.'"
-    
+
+  utter_welcome: 
+    - text: "Hi 👋,\n what do you want to know about COVID-19?"
+
+  utter_help:
+    - text: "I can tell you the current number of reported cases for each country and i can answer more general question like 'what are the symptoms?'"
 
 session_config:
   session_expiration_time: 60

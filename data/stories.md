@@ -16,12 +16,20 @@
 
 ## highest by loc
 * total_highest_by
-    - action_highest_by
+    - action_faq_qa
 
 ## lowest by loc
 * total_lowest_by
-    - action_lowest_by
+    - action_faq_qa
 
 ## faq
 * total_faq_qa
     - action_faq_qa
+
+## help
+* help
+    - utter_help
+
+## welcome
+* welcome
+    - utter_welcome

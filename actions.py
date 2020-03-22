@@ -93,7 +93,7 @@ class ActionRateOfIncreaseByLocation(Action):
 
         return []
 
-
+"""
 class ActionHighestBy(Action):
 
     def name(self) -> Text:
@@ -134,7 +134,7 @@ class ActionLowestBy(Action):
         dispatcher.utter_message(text=str(r))
 
         return []
-
+"""
 
 class ActionFAQQA(Action):
 
