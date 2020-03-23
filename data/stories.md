@@ -23,5 +23,5 @@
     - action_lowest_by
 
 ## faq
-* total_faq_qa
+* faq_qa
     - action_faq_qa
