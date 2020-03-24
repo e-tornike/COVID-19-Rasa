@@ -21,17 +21,13 @@ class ActionTotalInfected(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        # covid19 = COVID19Py.COVID19()
-        # res = covid19.getLatest()
 
         url = URL + "latest"
         response = requests.get(url)
         res = json.loads(response.content)
 
-        # r = res['confirmed']
         r = res["latest"]["confirmed"]
 
-        # dispatcher.utter_message(text=f"there are {r} reported cases")
         dispatcher.utter_message(template="utter_total_infected", cases=str(r))
 
         return []
@@ -55,14 +51,9 @@ class ActionTotalInfectedByLocation(Action):
             cc = country.alpha_2
             cname = country.name
 
-            # covid19 = COVID19Py.COVID19()
-            # res = covid19.getLocationByCountryCode(cc)
-
             url = URL + f"locations?country_code={cc}"
             response = requests.get(url)
             res = json.loads(response.content)
-
-            # r = sum([r['latest']['confirmed'] for r in res])  # sum up all cases from all provinces
 
             r = sum([r["latest"]["confirmed"] for r in res["locations"]])
 
@@ -99,8 +90,6 @@ class ActionTotalDeathsByLocation(Action):
             response = requests.get(url)
             res = json.loads(response.content)
 
-            # r = sum([r['latest']['recovered'] for r in res])  # sum up all cases from all provinces
-
             r = sum([r["latest"]["deaths"] for r in res["locations"]])
 
             dispatcher.utter_message(
@@ -136,8 +125,6 @@ class ActionTotalRecoveriesByLocation(Action):
             response = requests.get(url)
             res = json.loads(response.content)
 
-            # r = sum([r['latest']['recovered'] for r in res])  # sum up all cases from all provinces
-
             r = sum([r["latest"]["recovered"] for r in res["locations"]])
 
             dispatcher.utter_message(
@@ -152,17 +139,16 @@ class ActionTotalRecoveriesByLocation(Action):
         return []
 
 
+"""
 class ActionRateOfIncreaseByLocation(Action):
+
     def name(self) -> Text:
         return "action_rate_of_increase_by_location"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
-        loc = tracker.get_slot("GPE").lower()
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        loc = tracker.get_slot('GPE').lower()
         country = pycountry.countries.lookup(loc)
         cc = country.alpha_2
         cname = country.name
@@ -174,7 +160,6 @@ class ActionRateOfIncreaseByLocation(Action):
         return []
 
 
-"""
 class ActionHighestBy(Action):
 
     def name(self) -> Text:
