@@ -26,7 +26,7 @@ slots:
     type: text
 
 responses:
- utter_total_infected:
+  utter_total_infected:
     - text: "There are currently {cases} reported cases"
 
   utter_total_infected_by_location:
