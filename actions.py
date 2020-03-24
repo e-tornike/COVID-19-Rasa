@@ -213,6 +213,33 @@ class ActionFAQQA(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="faq-qa")
+
+        question = tracker.latest_message["text"]
+
+        URL = "https://covid-middleware.deepset.ai/api/bert/question"
+        headers = {"content-type": "application/json"}
+        data = json.dumps({"question": question})
+
+        response = requests.post(URL, headers=headers, data=data)
+        res = json.loads(response.content)
+
+        res_question = res["answers"][0]["question"]
+        answer = res["answers"][0]["answer"]
+        relevance = str(round(float(res["answers"][0]["probability"]) * 100, 1))
+        source = res["answers"][0]["meta"]["source"]
+        link = res["answers"][0]["meta"]["link"]
+        last_update = res["answers"][0]["meta"]["last_update"]
+
+        # TODO format message
+        # dispatcher.utter_message(template="utter_faq_qa", question=res_question, answer=answer, relevance=relevance, source=source, link=link, last_update=last_update, parse_mode="MARKDOWN")
+        dispatcher.utter_message(
+            template="utter_faq_qa",
+            question=res_question,
+            answer=answer,
+            relevance=relevance,
+            source=source,
+            link=link,
+            last_update=last_update,
+        )
 
         return []

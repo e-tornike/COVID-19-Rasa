@@ -72,6 +72,9 @@ responses:
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
 
+  utter_faq_qa:
+    - text: "Answer Relevance: {relevance}\n\n{question}\n\n{answer}\n\nSource: {source}\nLink: {link}\nLast update: {last_update}\nFeedback: "
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
