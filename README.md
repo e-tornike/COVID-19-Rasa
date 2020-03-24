@@ -14,7 +14,13 @@ rasa run actions
 rasa shell
 ```
 
-### 2. Run Rasa API
+### 2. Run Rasa bot
+```
+rasa run actions
+rasa run
+```
+
+### 3. Run Rasa API
 ```
 rasa run actions
 rasa run -m models --enable-api --log-file out.log
