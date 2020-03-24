@@ -33,6 +33,9 @@ responses:
 
   utter_total_infected_by_location:
     - text: "There are currently {cases} reported cases in {location}"
+      
+  utter_error_unkown_location:
+    - text: "sorry, i don't know the location '{location}'"
 
   utter_total_recoveries:
     - text: "There are currently {cases} recovered cases"
