@@ -110,4 +110,13 @@ dmypy.json
 # Credentials
 credentials.yml
 
+# virtual environment
+venv/
+
+# IDEs
+.idea/
+
+# local files
+TODOs.md
+
 # End of https://www.gitignore.io/api/python
