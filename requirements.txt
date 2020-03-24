@@ -2,5 +2,5 @@ COVID19Py==0.1.0
 pycountry==19.8.18
 rasa==1.8.2
 rasa-sdk==1.8.1
-spacy==2.2.4
+spacy
 tensorflow-text==2.1.1
