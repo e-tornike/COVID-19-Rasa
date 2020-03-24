@@ -15,16 +15,17 @@
     - action_rate_of_increase_by_location
 
 ## highest by loc
-* total_highest_by
-    - action_faq_qa
+#* total_highest_by
+#    - action_faq_qa
 
 ## lowest by loc
-* total_lowest_by
-    - action_faq_qa
+#* total_lowest_by
+#    - action_faq_qa
 
-## faq
-* faq_qa
-    - action_faq_qa
+## covid_faq
+* covid_qa
+    - action_covid_qa
+    - utter_ask_feedback
 
 ## help
 * help

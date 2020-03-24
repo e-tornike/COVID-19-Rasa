@@ -12,21 +12,19 @@ URL = "https://coronavirus-tracker-api.herokuapp.com/v2/"
 
 
 class ActionTotalInfected(Action):
+
     def name(self) -> Text:
         return "action_total_infected"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        url = URL + "latest"
+        url = URL+"latest"
         response = requests.get(url)
         res = json.loads(response.content)
 
-        r = res["latest"]["confirmed"]
+        r = res['latest']['confirmed']
 
         dispatcher.utter_message(template="utter_total_infected", cases=str(r))
 
@@ -34,15 +32,13 @@ class ActionTotalInfected(Action):
 
 
 class ActionTotalInfectedByLocation(Action):
+
     def name(self) -> Text:
         return "action_total_infected_by_location"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         loc = list(tracker.get_latest_entity_values("GPE"))[0]
 
@@ -55,32 +51,24 @@ class ActionTotalInfectedByLocation(Action):
             response = requests.get(url)
             res = json.loads(response.content)
 
-            r = sum([r["latest"]["confirmed"] for r in res["locations"]])
+            r = sum([r['latest']['confirmed'] for r in res['locations']])
 
-            dispatcher.utter_message(
-                template="utter_total_infected_by_location",
-                cases=str(r),
-                location=str(cname),
-            )
+            dispatcher.utter_message(template="utter_total_infected_by_location", cases=str(r), location=str(cname))
         except LookupError:
-            dispatcher.utter_message(
-                template="utter_error_unknown_location", location=str(loc)
-            )
+            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
 
 
 class ActionTotalDeathsByLocation(Action):
+
     def name(self) -> Text:
         return "action_total_deaths_by_location"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        loc = tracker.get_slot("GPE").lower()
+        loc = tracker.get_slot('GPE').lower()
         try:
             country = pycountry.countries.lookup(loc)
             cc = country.alpha_2
@@ -90,32 +78,24 @@ class ActionTotalDeathsByLocation(Action):
             response = requests.get(url)
             res = json.loads(response.content)
 
-            r = sum([r["latest"]["deaths"] for r in res["locations"]])
+            r = sum([r['latest']['deaths'] for r in res['locations']])
 
-            dispatcher.utter_message(
-                template="utter_total_deaths_by_location",
-                cases=str(r),
-                location=str(cname),
-            )
+            dispatcher.utter_message(template="utter_total_deaths_by_location", cases=str(r), location=str(cname))
         except LookupError:
-            dispatcher.utter_message(
-                template="utter_error_unknown_location", location=str(loc)
-            )
+            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
 
 
 class ActionTotalRecoveriesByLocation(Action):
+
     def name(self) -> Text:
         return "action_total_recoveries_by_location"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        loc = tracker.get_slot("GPE").lower()
+        loc = tracker.get_slot('GPE').lower()
         try:
             country = pycountry.countries.lookup(loc)
             cc = country.alpha_2
@@ -125,19 +105,12 @@ class ActionTotalRecoveriesByLocation(Action):
             response = requests.get(url)
             res = json.loads(response.content)
 
-            r = sum([r["latest"]["recovered"] for r in res["locations"]])
+            r = sum([r['latest']['recovered'] for r in res['locations']])
 
-            dispatcher.utter_message(
-                template="utter_total_recoveries_by_location",
-                cases=str(r),
-                location=str(cname),
-            )
+            dispatcher.utter_message(template="utter_total_recoveries_by_location", cases=str(r), location=str(cname))
         except LookupError:
-            dispatcher.utter_message(
-                template="utter_error_unknown_location", location=str(loc)
-            )
+            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
-
 
 """
 class ActionRateOfIncreaseByLocation(Action):
@@ -204,17 +177,15 @@ class ActionLowestBy(Action):
 
 
 class ActionFAQQA(Action):
+
     def name(self) -> Text:
-        return "action_faq_qa"
+        return "action_covid_qa"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        question = tracker.latest_message["text"]
+        question = tracker.latest_message['text']
 
         URL = "https://covid-middleware.deepset.ai/api/bert/question"
         headers = {"content-type": "application/json"}
@@ -223,23 +194,15 @@ class ActionFAQQA(Action):
         response = requests.post(URL, headers=headers, data=data)
         res = json.loads(response.content)
 
-        res_question = res["answers"][0]["question"]
-        answer = res["answers"][0]["answer"]
-        relevance = str(round(float(res["answers"][0]["probability"]) * 100, 1))
-        source = res["answers"][0]["meta"]["source"]
-        link = res["answers"][0]["meta"]["link"]
-        last_update = res["answers"][0]["meta"]["last_update"]
+        res_question = res['answers'][0]['question']
+        answer = res['answers'][0]['answer']
+        relevance = str(round(float(res['answers'][0]['probability'])*100,1))
+        source = res['answers'][0]['meta']['source']
+        link = res['answers'][0]['meta']['link']
+        last_update = res['answers'][0]['meta']['last_update']
 
         # TODO format message
-        # dispatcher.utter_message(template="utter_faq_qa", question=res_question, answer=answer, relevance=relevance, source=source, link=link, last_update=last_update, parse_mode="MARKDOWN")
-        dispatcher.utter_message(
-            template="utter_faq_qa",
-            question=res_question,
-            answer=answer,
-            relevance=relevance,
-            source=source,
-            link=link,
-            last_update=last_update,
-        )
+        dispatcher.utter_message(template="utter_covid_qa", question=res_question, answer=answer, relevance=relevance, source=source, link=link, last_update=last_update)
+        # dispatcher.utter_message(template="utter_faq_qa", question=res_question, answer=answer, relevance=relevance, source=source, link=link, last_update=last_update)
 
         return []
