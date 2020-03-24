@@ -29,7 +29,8 @@ class ActionTotalInfected(Action):
         # r = res['confirmed']
         r = res['latest']['confirmed']
 
-        dispatcher.utter_message(text=f"there are {r} reported cases")
+        # dispatcher.utter_message(text=f"there are {r} reported cases")
+        dispatcher.utter_message(template="utter_total_infected", cases=str(r))
 
         return []
 
@@ -46,7 +47,9 @@ class ActionTotalInfectedByLocation(Action):
         loc = list(tracker.get_latest_entity_values("GPE"))[0]
 
         try:
-            cc = pycountry.countries.lookup(loc).alpha_2
+            country = pycountry.countries.lookup(loc)
+            cc = country.alpha_2
+            cname = country.name
 
             # covid19 = COVID19Py.COVID19()
             # res = covid19.getLocationByCountryCode(cc)
@@ -59,7 +62,7 @@ class ActionTotalInfectedByLocation(Action):
 
             r = sum([r['latest']['confirmed'] for r in res['locations']])
 
-            dispatcher.utter_message(template="utter_total_infected_by_location", cases=str(r), location=str(loc))
+            dispatcher.utter_message(template="utter_total_infected_by_location", cases=str(r), location=str(cname))
         except LookupError:
             dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
@@ -75,9 +78,10 @@ class ActionTotalDeathsByLocation(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         loc = tracker.get_slot('GPE').lower()
-        print('test :)')
         try:
-            cc = pycountry.countries.lookup(loc).alpha_2
+            country = pycountry.countries.lookup(loc)
+            cc = country.alpha_2
+            cname = country.name
 
             url = URL + f"locations?country_code={cc}"
             response = requests.get(url)
@@ -87,7 +91,7 @@ class ActionTotalDeathsByLocation(Action):
 
             r = sum([r['latest']['deaths'] for r in res['locations']])
 
-            dispatcher.utter_message(template="utter_total_deaths_by_location", cases=str(r), location=str(loc))
+            dispatcher.utter_message(template="utter_total_deaths_by_location", cases=str(r), location=str(cname))
         except LookupError:
             dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
@@ -104,7 +108,9 @@ class ActionTotalRecoveriesByLocation(Action):
 
         loc = tracker.get_slot('GPE').lower()
         try:
-            cc = pycountry.countries.lookup(loc).alpha_2
+            country = pycountry.countries.lookup(loc)
+            cc = country.alpha_2
+            cname = country.name
 
             url = URL + f"locations?country_code={cc}"
             response = requests.get(url)
@@ -114,7 +120,7 @@ class ActionTotalRecoveriesByLocation(Action):
 
             r = sum([r['latest']['recovered'] for r in res['locations']])
 
-            dispatcher.utter_message(template="utter_total_recoveries_by_location", cases=str(r), location=str(loc))
+            dispatcher.utter_message(template="utter_total_recoveries_by_location", cases=str(r), location=str(cname))
         except LookupError:
             dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
         return []
@@ -129,7 +135,9 @@ class ActionRateOfIncreaseByLocation(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         loc = tracker.get_slot('GPE').lower()
-        cc = pycountry.countries.lookup(loc).alpha_2
+        country = pycountry.countries.lookup(loc)
+        cc = country.alpha_2
+        cname = country.name
 
         ## TODO
 
