@@ -36,20 +36,20 @@ responses:
     - text: "Welcome! I am your personal COVID-19 Bot🤖. What can I do for you?"
 
   utter_total_infected:
-    - text: "There are currently {cases} reported cases.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
-    - text: "Currently, there are {cases} reported cases.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "There are currently {cases} reported cases.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "Currently, there are {cases} reported cases.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
 
   utter_total_infected_by_location:
-    - text: "There are currently {cases} reported cases in {location}.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
-    - text: "Currently, there are {cases} reported cases in {location}.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "There are currently {cases} reported cases in {location}.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "Currently, there are {cases} reported cases in {location}.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
 
   utter_total_deaths_by_location:
-    - text: "There are currently {cases} reported deaths in {location}.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
-    - text: "Currently, there are {cases} reported deaths in {location}.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "There are currently {cases} reported deaths in {location}.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "Currently, there are {cases} reported deaths in {location}.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
 
   utter_total_recoveries_by_location:
-    - text: "There are currently {cases} reported recoveries in {location}.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
-    - text: "Currently, there are {cases} reported recoveries in {location}.\nSource: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "There are currently {cases} reported recoveries in {location}.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
+    - text: "Currently, there are {cases} reported recoveries in {location}.\n🌍Source: [{Coronavirus Tracker API}](https://github.com/ExpDev07/coronavirus-tracker-api)"
 
   utter_error_unkown_location:
     - text: "Sorry, I don't know the location '{location}'"
