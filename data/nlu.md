@@ -286,7 +286,7 @@
 - which city has the least covid-19 cases
 - which state has the least number of covid-19 cases
 
-## intent:faq_qa
+## intent:covid_qa
 - what is a novel [coronavirus](topic)
 - why is the disease being called [coronavirus](topic) disease 2019, covid-19
 - why might someone blame or avoid individuals and groups (create stigma) because of covid-19
@@ -516,3 +516,19 @@
 - hey
 - /start
 - let's go
+
+## lookup:location
+data/lookups/location.txt
+
+## lookup:virus
+data/lookups/virus.txt
+
+## synonym:USA
+ - U.S
+ - US
+ - usa
+ - United States
+
+## synonym:United Kingdom
+ - UK
+ - U.K.

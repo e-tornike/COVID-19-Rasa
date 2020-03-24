@@ -1,0 +1,498 @@
+Czechia
+Bangladesh
+Afghanistan
+East Timor
+Mozambique
+Latvia
+Vietnam
+Timor-Leste
+Ethiopia
+Gabon
+Grenada
+Pakistan
+Trinidad and Tobago
+Ecuador
+Netherlands
+Thailand
+United Kingdom
+Zambia
+Poland
+Angola
+Cape Verde
+Armenia
+Tunisia
+Bulgaria
+Israel
+Greece
+Greenland
+Cabo Verde
+France
+El Salvador
+Namibia
+Turkey
+Bahamas, The
+Eritrea
+Haiti
+Congo (Brazzaville)
+Romania
+Jamaica
+Djibouti
+Seychelles
+Mexico
+Georgia
+Jersey
+The Gambia
+Cuba
+Kazakhstan
+Philippines
+Papua New Guinea
+Nigeria
+Cameroon
+Central African Republic
+Uzbekistan
+Jordan
+Kosovo
+Nicaragua
+Saudi Arabia
+Moldova
+Algeria
+Antigua and Barbuda
+North Macedonia
+French Guiana
+Australia
+Germany
+Estonia
+Indonesia
+Bhutan
+Paraguay
+Benin
+Qatar
+Guadeloupe
+Singapore
+Iran
+Suriname
+Maldives
+Kenya
+Togo
+Sri Lanka
+Slovenia
+Gambia, The
+US
+Tanzania
+Colombia
+Egypt
+Japan
+Korea, South
+Sudan
+Belarus
+Mayotte
+Eswatini
+Finland
+United Arab Emirates
+Spain
+Portugal
+Hungary
+Norway
+Luxembourg
+Cruise Ship
+Equatorial Guinea
+Dominican Republic
+Congo (Kinshasa)
+Italy
+Burkina Faso
+Guatemala
+Liberia
+Reunion
+Saint Lucia
+Bosnia and Herzegovina
+Cambodia
+Bolivia
+Rwanda
+The Bahamas
+Guernsey
+Malta
+Serbia
+Guyana
+Russia
+China
+Chad
+Denmark
+Nepal
+Lebanon
+Syria
+New Zealand
+Costa Rica
+Cyprus
+Honduras
+Martinique
+Somalia
+San Marino
+Mongolia
+Niger
+Iceland
+Monaco
+Dominica
+Liechtenstein
+Madagascar
+India
+Holy See
+Azerbaijan
+Barbados
+Belgium
+Albania
+Venezuela
+Morocco
+Lithuania
+Kuwait
+Argentina
+Uganda
+Republic of the Congo
+South Africa
+Brazil
+Brunei
+Senegal
+Kyrgyzstan
+Mauritius
+Oman
+Uruguay
+Guam
+Puerto Rico
+Panama
+Guinea
+Cote d'Ivoire
+Austria
+Chile
+Sweden
+Peru
+Canada
+Taiwan*
+Mauritania
+Andorra
+Malaysia
+Switzerland
+Zimbabwe
+Croatia
+Slovakia
+Montenegro
+Bahrain
+Ukraine
+Ireland
+Ghana
+Fiji
+Saint Vincent and the Grenadines
+Iraq
+Minnesota
+Maine
+Grand Princess
+Inner Mongolia
+Northwest Territories
+Henan
+Sichuan
+Cook County
+Hainan
+Illinois
+Island
+Fort Bend County
+New York
+Isle of Man
+Shaanxi
+Faroe Islands
+Loudoun
+St. Louis County
+Nevada
+Jilin
+Sint Maarten
+Monmouth
+Denver County
+Monroe
+Netherlands
+Washoe County
+Chongqing
+Jefferson
+Sacramento County
+United Kingdom
+Hendricks County
+Hudson County
+Charlton
+Delaware
+Passaic
+Virginia
+Burlington
+Collier
+St. Joseph
+Shasta County
+Wake County
+Greenland
+France
+South Carolina
+Bon Homme
+Berkshire County
+Colorado
+Honolulu County
+Fresno County
+Kansas
+Harford County
+Zhejiang
+Curacao
+Kittitas County
+Alberta
+Multnomah
+Stanislaus
+Liaoning
+Washington County
+Nebraska
+Alabama
+Humboldt County
+Alameda County
+Maryland
+Norfolk
+Providence County
+Fayette County
+Georgia
+Santa Cruz
+Jefferson Parish
+Los Angeles
+Lake
+Hawaii
+Guangxi
+South Australia
+Williamson County
+Gregg
+Pinellas
+Heilongjiang
+San Diego County
+Santa Clara County
+Iowa
+New Mexico
+Anhui
+Minnehaha
+Newfoundland and Labrador
+Suffolk County
+Collin County
+Manitoba
+Wyoming
+French Guiana
+Madera County
+Pima
+Hong Kong
+North Dakota
+Napa
+Camden
+Jiangxi
+Montserrat
+Orleans
+South Dakota
+Clark County
+Guadeloupe
+California
+Fairfax County
+Pennsylvania
+Anoka
+Alaska
+DeKalb
+Nassau
+New Castle
+Floyd
+Queensland
+Noble
+Bermuda
+US
+Xinjiang
+Saint Barthelemy
+Riverside County
+Maricopa County
+Grafton County
+Bennington County
+Wayne
+French Polynesia
+Mayotte
+Knox
+Whatcom
+Harris County
+Charleston County
+Skagit
+Hunan
+Okaloosa County
+Fulton County
+Indiana
+Marion County
+Sonoma County
+St Martin
+Spotsylvania
+Deschutes
+Kershaw County
+Carver County
+Jefferson County
+Quebec
+Davison
+Klamath County
+Volusia County
+El Paso County
+Fairfield
+Bernalillo
+Pennington
+Philadelphia
+Tulsa County
+Yolo County
+Eagle
+Tibet
+Prince George's
+Utah
+Reunion
+Bergen County
+Ontario
+Placer County
+San Francisco County
+Pasco
+Delaware County
+Rockland County
+Chatham County
+Gansu
+Ningxia
+San Joaquin
+Kitsap
+Tennessee
+New South Wales
+Fujian
+Middlesex County
+New Brunswick
+Michigan
+Montgomery
+Union
+Summit County
+Socorro
+Shanxi
+Australian Capital Territory
+United States Virgin Islands
+Virgin Islands
+Charles Mix
+Ventura
+Saratoga County
+District of Columbia
+Harrison County
+Cuyahoga
+Tianjin
+Weber
+Howard
+Oregon
+Macau
+Shanghai
+Denmark
+Beijing
+Charlotte County
+Larimer
+Western Australia
+Texas
+Thurston
+Spartanburg County
+McHenry
+San Benito
+New Hampshire
+Pinal County
+Snohomish County
+Arlington
+Wisconsin
+Dallas
+Shelby County
+Massachusetts
+Pierce County
+Johnson
+King County
+Montgomery County
+Lee County
+Hubei
+From Diamond Princess
+Oklahoma
+Saskatchewan
+Grant County
+Westchester County
+Aruba
+Summit
+Douglas County
+Gwinnett
+Wayne County
+Davis County
+Connecticut
+Louisiana
+Mississippi
+Gibraltar
+Hebei
+Bucks
+Gunnison
+Hanover
+Ramsey County
+Kane
+Missouri
+Pottawattamie
+Cherokee County
+Lancaster
+Kentucky
+Marin
+Calaveras
+New Jersey
+Alachua
+Adams
+Johnson County
+Tarrant
+Ohio
+Manatee County
+West Virginia
+Beadle
+New York County
+Guangdong
+Puerto Rico
+Guam
+Tasmania
+Boone
+Worcester
+Guizhou
+Fayette
+Nova Scotia
+Ulster County
+Rockingham County
+Pierce
+Rhode Island
+New Caledonia
+Idaho
+Sullivan
+Litchfield
+Washington
+Vermont
+Essex
+Santa Rosa County
+Arapahoe
+Broward County
+Dane
+Yunnan
+Prince Edward Island
+Northern Territory
+Davidson County
+British Columbia
+Jackson County
+San Mateo
+Shandong
+Nassau County
+Polk County
+Channel Islands
+Middlesex
+Norfolk County
+Olmsted
+Montana
+Cobb County
+Diamond Princess
+Jiangsu
+Arizona
+Victoria
+Oakland
+Contra Costa County
+Polk
+Orange County
+Solano
+Cayman Islands
+Umatilla
+Arkansas
+Qinghai
+Florida
+North Carolina
+Stark
+Hillsborough
