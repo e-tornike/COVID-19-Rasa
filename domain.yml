@@ -31,10 +31,10 @@ slots:
 
 responses:
   utter_help:
-    - text: "You need help"
+    - text: "I can tell you the current number of reported cases for each country and i can answer more general question like 'what are the symptoms?'"
 
   utter_welcome:
-    - text: "Welcome"
+    - text: "Hi 👋,\n what do you want to know about COVID-19?"
     
   utter_total_infected:
     - text: "There are currently {cases} reported cases."
@@ -60,15 +60,6 @@ responses:
 
   utter_total_recoveries_by_location:
     - text: "There are currently {cases} recovered cases in {location}"
-
-  utter_error_unknown_location:
-    - text: "sorry, i don't know the location '{location}.'"
-
-  utter_welcome: 
-    - text: "Hi 👋,\n what do you want to know about COVID-19?"
-
-  utter_help:
-    - text: "I can tell you the current number of reported cases for each country and i can answer more general question like 'what are the symptoms?'"
 
 session_config:
   session_expiration_time: 60
