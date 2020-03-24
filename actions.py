@@ -12,22 +12,24 @@ URL = "https://coronavirus-tracker-api.herokuapp.com/v2/"
 
 
 class ActionTotalInfected(Action):
-
     def name(self) -> Text:
         return "action_total_infected"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
         # covid19 = COVID19Py.COVID19()
         # res = covid19.getLatest()
 
-        url = URL+"latest"
+        url = URL + "latest"
         response = requests.get(url)
         res = json.loads(response.content)
 
         # r = res['confirmed']
-        r = res['latest']['confirmed']
+        r = res["latest"]["confirmed"]
 
         # dispatcher.utter_message(text=f"there are {r} reported cases")
         dispatcher.utter_message(template="utter_total_infected", cases=str(r))
@@ -36,13 +38,15 @@ class ActionTotalInfected(Action):
 
 
 class ActionTotalInfectedByLocation(Action):
-
     def name(self) -> Text:
         return "action_total_infected_by_location"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
 
         loc = list(tracker.get_latest_entity_values("GPE"))[0]
 
@@ -60,24 +64,32 @@ class ActionTotalInfectedByLocation(Action):
 
             # r = sum([r['latest']['confirmed'] for r in res])  # sum up all cases from all provinces
 
-            r = sum([r['latest']['confirmed'] for r in res['locations']])
+            r = sum([r["latest"]["confirmed"] for r in res["locations"]])
 
-            dispatcher.utter_message(template="utter_total_infected_by_location", cases=str(r), location=str(cname))
+            dispatcher.utter_message(
+                template="utter_total_infected_by_location",
+                cases=str(r),
+                location=str(cname),
+            )
         except LookupError:
-            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
+            dispatcher.utter_message(
+                template="utter_error_unknown_location", location=str(loc)
+            )
         return []
 
 
 class ActionTotalDeathsByLocation(Action):
-
     def name(self) -> Text:
         return "action_total_deaths_by_location"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
 
-        loc = tracker.get_slot('GPE').lower()
+        loc = tracker.get_slot("GPE").lower()
         try:
             country = pycountry.countries.lookup(loc)
             cc = country.alpha_2
@@ -89,24 +101,32 @@ class ActionTotalDeathsByLocation(Action):
 
             # r = sum([r['latest']['recovered'] for r in res])  # sum up all cases from all provinces
 
-            r = sum([r['latest']['deaths'] for r in res['locations']])
+            r = sum([r["latest"]["deaths"] for r in res["locations"]])
 
-            dispatcher.utter_message(template="utter_total_deaths_by_location", cases=str(r), location=str(cname))
+            dispatcher.utter_message(
+                template="utter_total_deaths_by_location",
+                cases=str(r),
+                location=str(cname),
+            )
         except LookupError:
-            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
+            dispatcher.utter_message(
+                template="utter_error_unknown_location", location=str(loc)
+            )
         return []
 
 
 class ActionTotalRecoveriesByLocation(Action):
-
     def name(self) -> Text:
         return "action_total_recoveries_by_location"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
 
-        loc = tracker.get_slot('GPE').lower()
+        loc = tracker.get_slot("GPE").lower()
         try:
             country = pycountry.countries.lookup(loc)
             cc = country.alpha_2
@@ -118,23 +138,31 @@ class ActionTotalRecoveriesByLocation(Action):
 
             # r = sum([r['latest']['recovered'] for r in res])  # sum up all cases from all provinces
 
-            r = sum([r['latest']['recovered'] for r in res['locations']])
+            r = sum([r["latest"]["recovered"] for r in res["locations"]])
 
-            dispatcher.utter_message(template="utter_total_recoveries_by_location", cases=str(r), location=str(cname))
+            dispatcher.utter_message(
+                template="utter_total_recoveries_by_location",
+                cases=str(r),
+                location=str(cname),
+            )
         except LookupError:
-            dispatcher.utter_message(template="utter_error_unknown_location", location=str(loc))
+            dispatcher.utter_message(
+                template="utter_error_unknown_location", location=str(loc)
+            )
         return []
 
 
 class ActionRateOfIncreaseByLocation(Action):
-
     def name(self) -> Text:
         return "action_rate_of_increase_by_location"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        loc = tracker.get_slot('GPE').lower()
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+        loc = tracker.get_slot("GPE").lower()
         country = pycountry.countries.lookup(loc)
         cc = country.alpha_2
         cname = country.name
@@ -191,13 +219,15 @@ class ActionLowestBy(Action):
 
 
 class ActionFAQQA(Action):
-
     def name(self) -> Text:
         return "action_faq_qa"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
         dispatcher.utter_message(text="faq-qa")
 
         return []
