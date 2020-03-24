@@ -500,6 +500,7 @@
 - when was the first information about the outbreak received
 - where did the outbreak start
 - have there been similar outbreaks in the past
+
 ## intent:help
 - help
 - what can you do?
@@ -507,6 +508,7 @@
 - what are your capabilities?
 - what are my options?
 - which question can you answer?
+
 ## intent:welcome
 - hi
 - hello

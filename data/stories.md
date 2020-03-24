@@ -23,7 +23,7 @@
     - action_faq_qa
 
 ## faq
-* total_faq_qa
+* faq_qa
     - action_faq_qa
 
 ## help
