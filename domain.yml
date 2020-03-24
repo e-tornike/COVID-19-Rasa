@@ -6,6 +6,8 @@ intents:
   - highest_by
   - lowest_by
   - faq_qa
+  - help
+  - welcome
 
 actions:
   - action_total_infected
