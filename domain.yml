@@ -58,8 +58,6 @@ responses:
   utter_total_recoveries:
     - text: "There are currently {cases} recovered cases"
 
-  utter_total_recoveries_by_location:
-    - text: "There are currently {cases} recovered cases in {location}"
 
 session_config:
   session_expiration_time: 60
