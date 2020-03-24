@@ -3,6 +3,8 @@ intents:
   - total_infected_by_location
   - total_recoveries_by_location
   - rate_of_increase_by_location
+  - total_highest_by
+  - total_lowest_by
   - faq_qa
   - help
   - welcome
