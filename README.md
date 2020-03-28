@@ -1,5 +1,7 @@
 # COVID-19 Rasa Chatbot
 
+![COVID-19 Rasa Telegram Demo](https://github.com/e-tony/COVID-QA.gif)
+
 
 ### Getting started
 
