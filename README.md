@@ -1,7 +1,7 @@
 # COVID-19 Rasa Chatbot
 
 <p align="center">
-  <img height="300" src="https://github.com/e-tony/COVID-19-Rasa/blob/master/COVID-QA.gif">
+  <img height="400" src="https://github.com/e-tony/COVID-19-Rasa/blob/master/COVID-QA.gif">
 </p>
 
 ### Getting started
